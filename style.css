@@ -314,7 +314,41 @@ footer{
     font-style: normal;
 }
 
+#btn-open-menu-on-mobile-outside{
+    display: none;
+}
+
+#mobile-menu{
+    display: none;
+    background-color: whitesmoke;
+}
+
 @media(max-width: 850px) {
+    #btn-open-menu-on-mobile-outside{
+        display: inline-block;
+        position: sticky;
+        background-color: lightskyblue;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    #btn-open-menu-on-mobile-inside{
+        background-image: url("img/menu.svg");
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+    }
+
+    #close-mobile-menu{
+        font-weight: bold;
+    }
+
+    #mobile-menu{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+    }
+
     #btn-onclick-top{
         visibility: visible;
     }
@@ -322,14 +356,13 @@ footer{
         width: 90%;
     }
     main{
-        grid-template-columns: none;
-        grid-template-rows: auto;
+        display: inline-block;
     }
     aside{
         position: static;
     }
     #left-screen{
-        margin: 0 auto;
+        display: none;
     }
     #right-screen{
         width: inherit;
