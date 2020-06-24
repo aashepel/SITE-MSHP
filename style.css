@@ -327,7 +327,7 @@ footer{
     #btn-open-menu-on-mobile-outside{
         display: inline-block;
         position: -webkit-sticky;
-        /*position: sticky;*/
+        position: sticky;
         /*background-color: lightskyblue;*/
         /*width: 100%;*/
         top: 0;
