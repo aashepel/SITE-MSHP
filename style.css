@@ -342,6 +342,7 @@ footer{
     width: 100vw;
     height: 100vh;
     position: fixed;
+    z-index: 10000;
 }
 
 @media(max-width: 850px) {
