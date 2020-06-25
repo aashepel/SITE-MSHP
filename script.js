@@ -81,7 +81,7 @@ function open_mobile_menu() {
         document.body.style.overflow = "hidden";
     } else {
         document.getElementById('mobile-menu').style.display = "none";
-        document.getElementById('btn-open-menu-on-mobile-outside').style.display = "inline-block";
+        document.getElementById('btn-open-menu-on-mobile-outside').style.display = "block";
         document.body.style.overflow = "visible";
     }
 }
