@@ -27,6 +27,14 @@ window.onload = function () {
         document.getElementsByTagName('main')[0].style.display = "inline-block";
         document.getElementsByTagName('main')[0].innerHTML = "<p style='text-align: center; font-family: SansSerif; font-size: 35px; color: #29c5e6'>Страница еще не заполнена</p>";
     }
+    let element_footer = document.getElementsByTagName('footer')[0];
+    // console.log(element_footer[0]);
+    element_footer.innerHTML = "" +
+        "<div id = 'footer-inside'>" +
+        "<p>Александр Шепелев</p>" +
+        "<p>МШП</p>" +
+        "<p>2020</p>" +
+        "</div>";
 }
 
 window.onloadstart = function () {

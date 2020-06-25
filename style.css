@@ -3,6 +3,11 @@
     src: url("fonts/DS_GOOSE.ttf");
 }
 
+@font-face {
+    font-family: 'Russian Family';
+    src: url("fonts/RuslanDisplay-Regular.ttf");
+}
+
 #page{
     width: 70%;
     margin: 0 auto;
@@ -262,7 +267,7 @@ footer{
     width: 100%;
     background-color: #7e7e7e;
     margin-top: 50px;
-    height: 100px;
+    display: inline-block;
 }
 
 /*------------------------------------------FOOTER------------------------------------------*/
@@ -509,6 +514,19 @@ button:hover{
 
 li{
     cursor: pointer;
+}
+
+#footer-inside{
+    position: relative;
+    margin: 0 auto;
+    width: max-content;
+    top: 50%;
+}
+
+#footer-inside p{
+    text-align: center;
+    font-family: "Russian Family";
+    font-size: 25px;
 }
 
 /*------------------------------------------PAGES------------------------------------------*/
