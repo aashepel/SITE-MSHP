@@ -1,4 +1,15 @@
 window.onload = function () {
+    let links = document.getElementsByClassName('link-of-menu');
+    let max_width_link = 0;
+    for (let i = 0; i < links.length; i++){
+        if (links[i].getBoundingClientRect().width > max_width_link){
+            max_width_link = links[i].getBoundingClientRect().width;
+        }
+    }
+    max_width_link += "px";
+    for (let i = 0; i < links.length; i++){
+        links[i].style.width = max_width_link;
+    }
     let element_active_link = document.getElementById('active');
     document.getElementsByTagName('h1')[0].textContent = element_active_link.textContent;
     document.getElementsByTagName("title")[0].textContent = element_active_link.textContent;
@@ -35,20 +46,6 @@ window.onload = function () {
         "<p>МШП</p>" +
         "<p>2020</p>" +
         "</div>";
-}
-
-window.onloadstart = function () {
-    let links = document.getElementsByClassName('link-of-menu');
-    let max_width_link = 0;
-    for (let i = 0; i < links.length; i++){
-        if (links[i].getBoundingClientRect().width > max_width_link){
-            max_width_link = links[i].getBoundingClientRect().width;
-        }
-    }
-    max_width_link += "px";
-    for (let i = 0; i < links.length; i++){
-        links[i].style.width = max_width_link;
-    }
 }
 
 let slideIndex = 1;
